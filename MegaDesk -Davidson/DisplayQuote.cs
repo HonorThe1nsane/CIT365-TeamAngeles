@@ -94,8 +94,8 @@ namespace MegaDesk__Davidson
             };
         
             string s = JsonConvert.SerializeObject(newQuote, Formatting.Indented);
-            File.WriteAllText(@"quotes.json", s);
-            var writer = new StreamWriter(@"quotes.json");
+
+            var writer = new StreamWriter(@"quotes.json", true);
             writer.Write(s);
             writer.Close();
             MessageBox.Show("Your order has been saved");
