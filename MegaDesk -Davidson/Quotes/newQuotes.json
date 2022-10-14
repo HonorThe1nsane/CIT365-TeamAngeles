@@ -1,4 +1,3 @@
-
 [
   {
     "QuoteDate": "October 13, 2022",
@@ -16,8 +15,7 @@
     "DrawerCost": 200.0,
     "QuotePrice": 2270.0,
     "RushCost": 70.0
-  }
-][
+  },
   {
     "QuoteDate": "October 13, 2022",
     "newDesk": {
@@ -34,5 +32,22 @@
     "DrawerCost": 350.0,
     "QuotePrice": 1460.0,
     "RushCost": 35.0
+  },
+  {
+    "QuoteDate": "October 13, 2022",
+    "newDesk": {
+      "DeskWidth": 30.0,
+      "DeskDepth": 20.0,
+      "NumDrawers": 2,
+      "DeskMaterial": "Pine"
+    },
+    "MaterialCost": 50.0,
+    "SurfaceArea": 600.0,
+    "SizeCost": 200.0,
+    "CustomerName": "Troy",
+    "RushDays": 5.0,
+    "DrawerCost": 100.0,
+    "QuotePrice": 390.0,
+    "RushCost": 40.0
   }
 ]
