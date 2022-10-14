@@ -38,8 +38,7 @@ namespace MegaDesk__TeamAngeles
 
         private void DisplayQuote_Load(object sender , EventArgs e)
         {
-            
-
+ 
             customerNameQuote.Text = deskQuote.CustomerName;
             widthQuote.Text = deskQuote.newDesk.DeskWidth.ToString();
             depthQuote.Text = deskQuote.newDesk.DeskDepth.ToString();
@@ -48,9 +47,6 @@ namespace MegaDesk__TeamAngeles
             rushQuote.Text = deskQuote.RushDays.ToString();
             totalQuote.Text = "$ " + deskQuote.QuotePrice.ToString();
             dateForQuote.Text = deskQuote.QuoteDate;
-
-
-
 
         }
 
