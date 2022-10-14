@@ -80,7 +80,7 @@ namespace MegaDesk__TeamAngeles
             }
             else
             {
-                SizeCost = SIZE_TRESHHOLD + (SurfaceArea - SIZE_TRESHHOLD);
+                SizeCost = (SurfaceArea - SIZE_TRESHHOLD);
             }
 
             return SizeCost;
