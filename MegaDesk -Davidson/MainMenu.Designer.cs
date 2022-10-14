@@ -41,7 +41,7 @@
             // pictureBox1
             // 
             this.pictureBox1.ImageLocation = "..\\..\\images\\pexels-ingo-joseph-631411 (2)." +
-    "jpg";
+"jpg";
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(621, 174);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
