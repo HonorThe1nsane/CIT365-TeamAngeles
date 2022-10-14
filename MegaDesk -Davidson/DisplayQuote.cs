@@ -95,7 +95,7 @@ namespace MegaDesk__TeamAngeles
         
             string s = JsonConvert.SerializeObject(newQuote, Formatting.Indented);
 
-            var path = @"..\..\Data\newQuotes.json";
+            var path = @"..\..\Quotes\newQuotes.json";
             if (!File.Exists(path))
             {
                 File.Create(path);
