@@ -14,7 +14,7 @@ using System.Xml.Linq;
 using Newtonsoft.Json;
 
 
-namespace MegaDesk__Davidson
+namespace MegaDesk__TeamAngeles
 {
     public partial class DisplayQuote : Form
 

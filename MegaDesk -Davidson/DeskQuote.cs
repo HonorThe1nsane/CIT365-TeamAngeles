@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MegaDesk__Davidson
+namespace MegaDesk__TeamAngeles
 {
     public class DeskQuote
     {

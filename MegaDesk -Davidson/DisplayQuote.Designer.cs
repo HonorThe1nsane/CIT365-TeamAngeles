@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace MegaDesk__Davidson
+namespace MegaDesk__TeamAngeles
 {
     partial class DisplayQuote
     {
@@ -263,19 +263,19 @@ namespace MegaDesk__Davidson
             // 
             // deskQuoteBindingSource
             // 
-            this.deskQuoteBindingSource.DataSource = typeof(MegaDesk__Davidson.DeskQuote);
+           this.deskQuoteBindingSource.DataSource = typeof(MegaDesk__TeamAngeles.DeskQuote);
             // 
             // deskBindingSource1
             // 
-            this.deskBindingSource1.DataSource = typeof(MegaDesk__Davidson.Desk);
+            this.deskBindingSource1.DataSource = typeof(MegaDesk__TeamAngeles.Desk);
             // 
             // deskBindingSource
             // 
-            this.deskBindingSource.DataSource = typeof(MegaDesk__Davidson.Desk);
+            this.deskBindingSource.DataSource = typeof(MegaDesk__TeamAngeles.Desk);
             // 
             // deskQuoteBindingSource1
             // 
-            this.deskQuoteBindingSource1.DataSource = typeof(MegaDesk__Davidson.DeskQuote);
+           this.deskQuoteBindingSource1.DataSource = typeof(MegaDesk__TeamAngeles.DeskQuote);
             // 
             // saveOrder
             // 

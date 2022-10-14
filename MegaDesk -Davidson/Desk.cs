@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace MegaDesk__Davidson
+namespace MegaDesk__TeamAngeles
 {
      public class Desk
     {

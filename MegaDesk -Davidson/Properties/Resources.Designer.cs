@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MegaDesk__Davidson.Properties
+namespace MegaDesk__TeamAngeles.Properties
 {
 
 

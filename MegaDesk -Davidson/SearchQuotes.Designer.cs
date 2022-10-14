@@ -1,4 +1,4 @@
-﻿namespace MegaDesk__Davidson
+﻿namespace MegaDesk__TeamAngeles
 {
     partial class SearchQuotes
     {

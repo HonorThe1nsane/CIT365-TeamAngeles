@@ -8,13 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MegaDesk__Davidson
+namespace MegaDesk__TeamAngeles
 {
     public partial class ViewAllQuotes : Form
     {
         public ViewAllQuotes()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+            Close();
         }
     }
 }

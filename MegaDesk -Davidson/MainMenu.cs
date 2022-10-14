@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MegaDesk__Davidson
+namespace MegaDesk__TeamAngeles
 {
     public partial class MainMenu : Form
     {
@@ -28,10 +28,10 @@ namespace MegaDesk__Davidson
 
         private void viewQuote_Click(object sender, EventArgs e)
         {
-            /*DisplayQuote displayQuoteForm = new DisplayQuote();
-            displayQuoteForm.Tag = this;
-            displayQuoteForm.Show(this);
-            Hide();*/
+            ViewAllQuotes viewAllQuotesForm = new ViewAllQuotes();
+            viewAllQuotesForm.Tag = this;
+            viewAllQuotesForm.Show(this);
+            Hide();
         }
 
         private void searchQuotes_Click(object sender, EventArgs e)

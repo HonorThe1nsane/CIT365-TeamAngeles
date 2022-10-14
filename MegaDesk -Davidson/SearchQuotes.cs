@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MegaDesk__Davidson
+namespace MegaDesk__TeamAngeles
 {
     public partial class SearchQuotes : Form
     {

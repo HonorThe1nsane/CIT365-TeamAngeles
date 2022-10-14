@@ -5,7 +5,7 @@ using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace MegaDesk__Davidson
+namespace MegaDesk__TeamAngeles
 {
     public partial class AddQuote : Form
     {
