@@ -95,12 +95,21 @@ namespace MegaDesk__TeamAngeles
         
             string s = JsonConvert.SerializeObject(newQuote, Formatting.Indented);
 
-            var writer = new StreamWriter(@"quotes.json", true);
-            writer.Write(s);
-            writer.Close();
-            MessageBox.Show("Your order has been saved");
-            
-            
+            var path = @"..\..\Data\newQuotes.json";
+            if (!File.Exists(path))
+            {
+                File.Create(path);
+            }
+            else
+            {
+                var writer = new StreamWriter(path, true);
+                writer.Write(s);
+                writer.Close();
+            }
+            MessageBox.Show("Your order has been saved")
+
+
+
 
         }
 
