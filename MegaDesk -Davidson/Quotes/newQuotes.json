@@ -49,5 +49,22 @@
     "DrawerCost": 100.0,
     "QuotePrice": 390.0,
     "RushCost": 40.0
+  },
+  {
+    "QuoteDate": "October 13, 2022",
+    "newDesk": {
+      "DeskWidth": 26.0,
+      "DeskDepth": 12.0,
+      "NumDrawers": 2,
+      "DeskMaterial": "Veneer"
+    },
+    "MaterialCost": 125.0,
+    "SurfaceArea": 312.0,
+    "SizeCost": 200.0,
+    "CustomerName": "Troy",
+    "RushDays": 14.0,
+    "DrawerCost": 100.0,
+    "QuotePrice": 425.0,
+    "RushCost": 0.0
   }
 ]

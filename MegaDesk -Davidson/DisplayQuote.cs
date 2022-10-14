@@ -75,9 +75,6 @@ namespace MegaDesk__TeamAngeles
         public void saveOrder_Click(object sender, EventArgs e)
         {
 
-
- 
-
             var path = @"..\..\Quotes\newQuotes.json";
             if (!File.Exists(path))
             {
@@ -86,13 +83,8 @@ namespace MegaDesk__TeamAngeles
             var quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(File.ReadAllText(path));
             quotes.Add(deskQuote);
             File.WriteAllText(path, JsonConvert.SerializeObject(quotes, Formatting.Indented));
+           
             MessageBox.Show("Quote saved");
-
-
-  
-
-
-
 
         }
 
