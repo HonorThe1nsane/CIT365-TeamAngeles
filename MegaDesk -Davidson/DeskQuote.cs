@@ -148,10 +148,6 @@ namespace MegaDesk__TeamAngeles
             return QuotePrice;
         }
 
-        /*internal static object CalculateQuote(object width, object depth, object drawers, object material, object rushDays)
-        {
-            throw new NotImplementedException();
-        }*/
 
         public DeskQuote()
         {
