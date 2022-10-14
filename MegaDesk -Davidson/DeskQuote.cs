@@ -76,11 +76,11 @@ namespace MegaDesk__TeamAngeles
         {
             if (SurfaceArea <= 1000)
             {
-                SizeCost = SIZE_TRESHHOLD;
+                SizeCost = BASE_PRICE;
             }
             else
             {
-                SizeCost = SurfaceArea - SIZE_TRESHHOLD;
+                SizeCost = BASE_PRICE + (SurfaceArea - SIZE_TRESHHOLD);
             }
 
             return SizeCost;
@@ -142,9 +142,9 @@ namespace MegaDesk__TeamAngeles
             return DrawerCost;
         }
 
-        public float CalcTotalCost(float SurfaceArea, float MaterialCost, float DrawerCost, float RushCost)
+        public float CalcTotalCost(float MaterialCost, float DrawerCost, float RushCost)
         {
-            QuotePrice = BASE_PRICE + SurfaceArea + MaterialCost + DrawerCost + RushCost;
+            QuotePrice = SizeCost + MaterialCost + DrawerCost + RushCost;
             return QuotePrice;
         }
 

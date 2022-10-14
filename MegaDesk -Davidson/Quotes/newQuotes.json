@@ -17,4 +17,22 @@
     "QuotePrice": 2270.0,
     "RushCost": 70.0
   }
+][
+  {
+    "QuoteDate": "October 13, 2022",
+    "newDesk": {
+      "DeskWidth": 45.0,
+      "DeskDepth": 35.0,
+      "NumDrawers": 7,
+      "DeskMaterial": "Rosewood"
+    },
+    "MaterialCost": 300.0,
+    "SurfaceArea": 1575.0,
+    "SizeCost": 775.0,
+    "CustomerName": "Pierce",
+    "RushDays": 7.0,
+    "DrawerCost": 350.0,
+    "QuotePrice": 1460.0,
+    "RushCost": 35.0
+  }
 ]

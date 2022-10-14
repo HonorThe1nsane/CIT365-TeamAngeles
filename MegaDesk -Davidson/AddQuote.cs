@@ -75,7 +75,7 @@ namespace MegaDesk__TeamAngeles
                 newQuote.CalcSurfaceAreaCost(newQuote.SurfaceArea);
                 newQuote.CalcRushOrderCost(newQuote.RushDays, newQuote.SurfaceArea);
 
-                newQuote.QuotePrice = newQuote.CalcTotalCost(newQuote.SurfaceArea, newQuote.MaterialCost, newQuote.DrawerCost, newQuote.RushCost);
+                newQuote.QuotePrice = newQuote.CalcTotalCost(newQuote.MaterialCost, newQuote.DrawerCost, newQuote.RushCost);
                 DisplayQuote displayQuote = new DisplayQuote(newQuote);
                 displayQuote.Tag = this;
                 displayQuote.Show(this);
