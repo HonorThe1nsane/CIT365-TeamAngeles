@@ -40,10 +40,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ImageLocation = "C:\\Users\\troym\\source\\repos\\CIT365-TeamAngeles\\MegaDesk -Davidson\\images\\pexels-i" +
+            this.pictureBox1.ImageLocation = "C:\\Users\\troym\\Source\\Repos\\CIT365-TeamAngeles\\MegaDesk -Davidson\\images\\pexels-i" +
     "ngo-joseph-631411 (2).jpg";
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(414, 113);
+            this.pictureBox1.Location = new System.Drawing.Point(422, 114);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(291, 224);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
