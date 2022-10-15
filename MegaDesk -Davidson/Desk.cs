@@ -24,8 +24,7 @@ namespace MegaDesk__TeamAngeles
         public const int MAXDEPTH = 48;
         public const int MINNUMOFDRAWERS = 0;
         public const int MAXNUMOFDRAWERS = 7;
-
-
+        
 
     }
 
