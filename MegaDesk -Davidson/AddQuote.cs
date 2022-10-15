@@ -18,7 +18,6 @@ namespace MegaDesk__TeamAngeles
             SelectedMaterial.DataSource = Enum.GetValues(typeof(SurfaceMaterial));
             ShipRushDays.DataSource = Enum.GetValues(typeof(shipDays));
 
-           
         }
 
 
@@ -40,8 +39,6 @@ namespace MegaDesk__TeamAngeles
         {
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                
-               
                 DeskQuote newQuote = new DeskQuote();
                 newQuote.CustomerName = customerNameInput.Text;
                 newQuote.newDesk.DeskWidth = Convert.ToInt32(DeskWidthInput.Text);
