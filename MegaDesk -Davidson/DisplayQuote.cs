@@ -71,7 +71,7 @@ namespace MegaDesk__TeamAngeles
         public void saveOrder_Click(object sender, EventArgs e)
         {
 
-            var path = @"..\..\Quotes\newQuotes.json";
+            var path = @"\Quotes\newQuotes.json";
             if (!File.Exists(path))
             {
                 File.Create(path);
