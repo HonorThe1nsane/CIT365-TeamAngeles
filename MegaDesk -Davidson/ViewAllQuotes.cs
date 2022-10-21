@@ -28,9 +28,14 @@ namespace MegaDesk__TeamAngeles
 
         private void ViewAllQuotes_Load(object sender, EventArgs e)
         {
-            var path = @"..\..\Quotes\newQuotes.json";
+            var path = @"\Quotes\newQuotes.json";
             var quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(File.ReadAllText(path));
             dataGridView1.DataSource = quotes;
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
