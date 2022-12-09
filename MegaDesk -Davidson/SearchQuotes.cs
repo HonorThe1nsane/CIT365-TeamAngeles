@@ -23,7 +23,7 @@ namespace MegaDesk__TeamAngeles
         private void sMaterial_SelectedIndexChanged(object sender, EventArgs e)
         {
             string material = sMaterial.SelectedItem.ToString();
-            var path = @"\Quotes\newQuotes.json";
+            var path = @"..\..\Quotes\newQuotes.json";
             var quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(File.ReadAllText(path));
             var filteredQuotes = quotes.Where(q => q.newDesk.DeskMaterial == material).ToList();
     
