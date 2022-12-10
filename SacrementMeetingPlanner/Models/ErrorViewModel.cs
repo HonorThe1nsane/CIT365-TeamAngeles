@@ -1,4 +1,4 @@
-namespace SacrementMeetingPlanner.Models
+namespace SacramentMeetingPlanner.Models
 {
     public class ErrorViewModel
     {

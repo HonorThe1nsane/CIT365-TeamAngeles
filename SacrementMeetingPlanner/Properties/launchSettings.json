@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "SacrementMeetingPlanner": {
+    "SacramentMeetingPlanner": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
