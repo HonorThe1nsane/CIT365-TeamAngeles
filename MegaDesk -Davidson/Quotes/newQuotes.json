@@ -66,5 +66,22 @@
     "DrawerCost": 100.0,
     "QuotePrice": 425.0,
     "RushCost": 0.0
+  },
+  {
+    "QuoteDate": "October 14, 2022",
+    "newDesk": {
+      "DeskWidth": 26.0,
+      "DeskDepth": 34.0,
+      "NumDrawers": 7,
+      "DeskMaterial": "Pine"
+    },
+    "MaterialCost": 50.0,
+    "SurfaceArea": 884.0,
+    "SizeCost": 200.0,
+    "CustomerName": "Pierce",
+    "RushDays": 7.0,
+    "DrawerCost": 350.0,
+    "QuotePrice": 630.0,
+    "RushCost": 30.0
   }
 ]
