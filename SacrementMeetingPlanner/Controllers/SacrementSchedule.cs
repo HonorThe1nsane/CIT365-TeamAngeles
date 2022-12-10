@@ -13,8 +13,5 @@ namespace MvcMovie.Controllers
             return "This is my default action...";
         }
 
-        // 
-        // GET: /SacramentSchedule/Welcome/ 
-
     }
 }
