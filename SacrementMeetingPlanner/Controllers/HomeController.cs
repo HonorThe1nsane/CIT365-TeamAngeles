@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SacrementMeetingPlanner.Models;
+using SacramentMeetingPlanner.Models;
 using System.Diagnostics;
 
-namespace SacrementMeetingPlanner.Controllers
+namespace SacramentMeetingPlanner.Controllers
 {
     public class HomeController : Controller
     {

@@ -3,10 +3,10 @@ using System.Text.Encodings.Web;
 
 namespace MvcMovie.Controllers
 {
-    public class SacrementScheduleController : Controller
+    public class SacramentScheduleController : Controller
     {
         // 
-        // GET: /SacrementSchedule/
+        // GET: /SacramentSchedule/
 
         public string Index()
         {
@@ -14,7 +14,7 @@ namespace MvcMovie.Controllers
         }
 
         // 
-        // GET: /SacrementSchedule/Welcome/ 
+        // GET: /SacramentSchedule/Welcome/ 
 
     }
 }
