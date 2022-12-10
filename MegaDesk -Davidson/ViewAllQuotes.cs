@@ -33,5 +33,10 @@ namespace MegaDesk__TeamAngeles
             dataGridView1.DataSource = quotes;
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
