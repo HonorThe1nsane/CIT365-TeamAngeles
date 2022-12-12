@@ -7,6 +7,9 @@
     <hr />
 
 <div class="printMe">
+    
+    <img class="imgPrint" src="~/imgs/The_Church_of_Jesus_Christ_of_LDS_Logo.png" />
+    <hr />
     <dl class="row">
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Date)
@@ -93,9 +96,11 @@
             @Html.DisplayFor(model => model.SpeakerSubjects)
         </dd>
     </dl>
+    <img class="imgPrint" id="img2" src="~/imgs/church-logo-footer-en_US.jpeg" />
+    
     
 </div>
-
+<br>
 <div class="no-printme">
     <script src="~/js/site.js"></script>
     <button type="button" class="btn btn-outline-info" onclick={window.print()}>Print</button> |
