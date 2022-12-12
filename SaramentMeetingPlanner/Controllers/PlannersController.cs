@@ -46,7 +46,25 @@ namespace SaramentMeetingPlanner.Controllers
         // GET: Planners/Create
         public IActionResult Create()
         {
+
+            
             return View();
+        }
+
+        public async Task<IActionResult> Print(int? id)
+        {
+            if (id == null || _context.Planner == null)
+            {
+                return NotFound();
+            }
+
+            var planner = await _context.Planner
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (planner == null)
+            {
+                return NotFound();
+            }
+            return View(planner);
         }
 
         // POST: Planners/Create

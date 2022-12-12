@@ -16,3 +16,13 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+@media print {
+    .no-printme {
+        display: none;
+    }
+
+    .printme {
+        display: block;
+    }
+}

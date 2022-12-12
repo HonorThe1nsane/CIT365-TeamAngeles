@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SaramentMeetingPlanner.styles.css" asp-append-version="true" />
+    @*<link rel="stylesheet" type="text/css" media="screen" href="your-app-core.css">
+    <link rel="stylesheet" type="text/css" media="print" href="your-app-core-print.css">*@
+    
 </head>
 <body>
-    <header>
+    <header class="no-printme">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid" id="navbarColor02">
                 <a class="navbar-brand" asp-controller="Planners" asp-action="Index">Planner List</a>
@@ -46,4 +49,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+@*<script src="~/js/site.js"></script>*@
+
 </html>

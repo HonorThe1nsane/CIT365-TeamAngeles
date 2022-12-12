@@ -2,8 +2,14 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-protected void btnPrint_Click(object sender, EventArgs e)
-{
-    Session["ctrl"] = pnl1;
-    ClientScript.RegisterStartupScript(this.GetType(), "onclick", "<script language=javascript>window.open('Print.aspx','PrintMe','height=300px,width=300px,scrollbars=1');</script>");
-}  
+/*function printDiv(divName) {
+        var divToPrint = document.getElementById(divName);
+        var newWin = window.open('', 'Print-Window');
+        newWin.document.open();
+    newWin.document.write('');
+    console.log(divToPrint.innnerHTML);
+        newWin.document.write(divToPrint.innerHTML);
+        newWin.document.close();
+        newWin.print();
+}
+*/
