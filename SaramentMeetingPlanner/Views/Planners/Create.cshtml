@@ -9,7 +9,7 @@
 <h4>Planner</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-7 offset-md-2">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -82,7 +82,8 @@
                 <input asp-for="SpeakerSubjects" class="form-control" />
                 <span asp-validation-for="SpeakerSubjects" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <br>
+            <div class="d-flex justify-content-center">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
