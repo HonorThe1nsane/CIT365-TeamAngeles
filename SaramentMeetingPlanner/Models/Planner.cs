@@ -7,6 +7,7 @@ namespace SaramentMeetingPlanner.Models
     {
         public int Id { get; set; }
 
+        [DisplayName("Date of Meeting")]
         [DataType(DataType.Date)]
         public DateTime Date { get; set; }
 
