@@ -47,13 +47,13 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ClosingPrayer)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.NumberOfSpeakers)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.SpeakerSubjects)
-            </th>*@
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -95,13 +95,13 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ClosingPrayer)
-            </td>
+            </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.NumberOfSpeakers)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SpeakerSubjects)
-            </td>*@
+            </td>
             <td>
                     <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                     <a class="btn btn-outline-warning" asp-action="Details" asp-route-id="@item.Id">Details</a>
