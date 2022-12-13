@@ -13,7 +13,7 @@ namespace SaramentMeetingPlanner.Models
         [DisplayName("Conducting")]
         public string? ConductingLeader { get; set; }
 
-        [DisplayName("Opening Hymn Title")]
+        [DisplayName("Opening Hymn")]
         public string? OpeningSongTitle { get; set; }
 
         [DisplayName("Opening Hymn Number")]
@@ -22,19 +22,19 @@ namespace SaramentMeetingPlanner.Models
         [DisplayName("Opening Prayer")]
         public string? OpeningPrayer { get; set; }
 
-        [DisplayName("Sacrament Hymn Title")]
+        [DisplayName("Sacrament Hymn")]
         public string? SacramentHymnTitle { get; set; }
 
         [DisplayName("Sacrament Hymn Number")]
         public int SacramentHymn { get; set; }
 
-        [DisplayName("Intermediate Hymn Title")]
+        [DisplayName("Intermediate Hymn")]
         public string? IntermediateTitle { get; set; }
 
         [DisplayName("Intermediate Hymn Number")]
         public int IntermediateNum { get; set; }
 
-        [DisplayName("Closing Hymn Title")]
+        [DisplayName("Closing Hymn")]
         public string? ClosingHymnTitle { get; set; }
 
         [DisplayName("Closing Hymn Number")]
