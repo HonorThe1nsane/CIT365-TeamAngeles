@@ -7,7 +7,7 @@ namespace SaramentMeetingPlanner.Models
     {
         public int Id { get; set; }
 
-        [DisplayName("Date of Meeting")]
+        [DisplayName("Date")]
         [DataType(DataType.Date)]
         public DateTime Date { get; set; }
 
@@ -47,7 +47,10 @@ namespace SaramentMeetingPlanner.Models
         [DisplayName("Number of Speakers")]
         public int NumberOfSpeakers { get; set; }
 
-        [DisplayName("Speaker Subjects")]
+        [DisplayName("Speakers")]
+        public string? Speakers { get; set; }
+
+        [DisplayName("Subjects")]
         public string? SpeakerSubjects { get; set; }
     }
 }
