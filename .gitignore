@@ -362,3 +362,6 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /SacrementMeetingPlanner
+/SaramentMeetingPlanner/Migrations/20221214061831_addSpeakers.cs
+/SaramentMeetingPlanner/Migrations/20221214061831_addSpeakers.Designer.cs
+/.gitignore
