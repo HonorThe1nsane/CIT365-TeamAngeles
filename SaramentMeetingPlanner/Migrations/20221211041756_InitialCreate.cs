@@ -30,6 +30,7 @@ namespace SaramentMeetingPlanner.Migrations
                     ClosingHymnNum = table.Column<int>(type: "int", nullable: false),
                     ClosingPrayer = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NumberOfSpeakers = table.Column<int>(type: "int", nullable: false),
+                    Speakers = table.Column<string>(type: "string", nullable: true),
                     SpeakerSubjects = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>

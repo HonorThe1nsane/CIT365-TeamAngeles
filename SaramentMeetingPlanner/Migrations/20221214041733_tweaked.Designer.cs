@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SaramentMeetingPlanner.Data;
 
@@ -11,9 +12,11 @@ using SaramentMeetingPlanner.Data;
 namespace SaramentMeetingPlanner.Migrations
 {
     [DbContext(typeof(SaramentMeetingPlannerContext))]
-    partial class SaramentMeetingPlannerContextModelSnapshot : ModelSnapshot
+    [Migration("20221214041733_tweaked")]
+    partial class tweaked
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
