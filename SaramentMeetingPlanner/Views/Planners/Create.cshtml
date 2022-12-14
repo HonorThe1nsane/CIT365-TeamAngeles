@@ -78,7 +78,12 @@
                 <span asp-validation-for="NumberOfSpeakers" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SpeakerSubjects" class="control-label"></label>
+                <label asp-for="Speakers" class="control-label">Speakers: Comma Seperated</label>
+                <input asp-for="Speakers" class="form-control" />
+                <span asp-validation-for="Speakers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpeakerSubjects" class="control-label">SpeakerSubjects: Comma Seperated</label>
                 <input asp-for="SpeakerSubjects" class="form-control" />
                 <span asp-validation-for="SpeakerSubjects" class="text-danger"></span>
             </div>

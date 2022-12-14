@@ -46,25 +46,7 @@ namespace SaramentMeetingPlanner.Controllers
         // GET: Planners/Create
         public IActionResult Create()
         {
-
-            
             return View();
-        }
-
-        public async Task<IActionResult> Print(int? id)
-        {
-            if (id == null || _context.Planner == null)
-            {
-                return NotFound();
-            }
-
-            var planner = await _context.Planner
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (planner == null)
-            {
-                return NotFound();
-            }
-            return View(planner);
         }
 
         // POST: Planners/Create
@@ -72,7 +54,7 @@ namespace SaramentMeetingPlanner.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Date,ConductingLeader,OpeningSongTitle,OpeningSongNum,OpeningPrayer,SacramentHymnTitle,SacramentHymn,IntermediateTitle,IntermediateNum,ClosingHymnTitle,ClosingHymnNum,ClosingPrayer,NumberOfSpeakers,SpeakerSubjects")] Planner planner)
+        public async Task<IActionResult> Create([Bind("Id,Date,ConductingLeader,OpeningSongTitle,OpeningSongNum,OpeningPrayer,SacramentHymnTitle,SacramentHymn,IntermediateTitle,IntermediateNum,ClosingHymnTitle,ClosingHymnNum,ClosingPrayer,NumberOfSpeakers,Speakers,SpeakerSubjects")] Planner planner)
         {
             if (ModelState.IsValid)
             {
@@ -104,7 +86,7 @@ namespace SaramentMeetingPlanner.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Date,ConductingLeader,OpeningSongTitle,OpeningSongNum,OpeningPrayer,SacramentHymnTitle,SacramentHymn,IntermediateTitle,IntermediateNum,ClosingHymnTitle,ClosingHymnNum,ClosingPrayer,NumberOfSpeakers,SpeakerSubjects")] Planner planner)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Date,ConductingLeader,OpeningSongTitle,OpeningSongNum,OpeningPrayer,SacramentHymnTitle,SacramentHymn,IntermediateTitle,IntermediateNum,ClosingHymnTitle,ClosingHymnNum,ClosingPrayer,NumberOfSpeakers,Speakers,SpeakerSubjects")] Planner planner)
         {
             if (id != planner.Id)
             {
@@ -170,6 +152,23 @@ namespace SaramentMeetingPlanner.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Print(int? id)
+        {
+            if (id == null || _context.Planner == null)
+            {
+                return NotFound();
+            }
+
+            var planner = await _context.Planner
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (planner == null)
+            {
+                return NotFound();
+            }
+            return View(planner);
+        }
+
 
         private bool PlannerExists(int id)
         {

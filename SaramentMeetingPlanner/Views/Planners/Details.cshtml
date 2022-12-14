@@ -2,6 +2,9 @@
 
 @{
     ViewData["Title"] = "Details";
+
+    List<string> speakerList = Model.Speakers.Split(new char[] { ',' }).ToList();
+    List<string> speakerSubjectsList = Model.SpeakerSubjects.Split(new char[] { ',' }).ToList();
 }
  
 
@@ -31,12 +34,39 @@
             <li>
                 <em>"@Html.DisplayFor(model => model.SacramentHymnTitle)"</em>
             </li>
-            <li>
-                <br />@Html.DisplayNameFor(model => model.IntermediateTitle)..........................................................................................................................@Html.DisplayFor(model => model.IntermediateNum)
+             <li>
+                <br />First Speaker..........................................................................................................................@speakerList[0]
             </li>
-            <li>
-                <em>"@Html.DisplayFor(model => model.IntermediateTitle)"</em>
-            </li>
+            @if (Model.NumberOfSpeakers == 3)
+            {
+                <li>
+                    <br />Second Speaker..........................................................................................................................@speakerList[1]
+                </li>
+                <li>
+                    <br />@Html.DisplayNameFor(model => model.IntermediateTitle)..........................................................................................................................@Html.DisplayFor(model => model.IntermediateNum)
+                </li>
+                <li>
+                    <em>"@Html.DisplayFor(model => model.IntermediateTitle)"</em>
+                </li>
+                <li>
+                    <br />Final Speaker..........................................................................................................................@speakerList[2]
+                </li>
+            }
+            else if(Model.NumberOfSpeakers == 2)
+            {
+                <li>
+                    <br />First Speaker..........................................................................................................................@speakerList[0]
+                </li>
+                <li>
+                    <br />@Html.DisplayNameFor(model => model.IntermediateTitle)..........................................................................................................................@Html.DisplayFor(model => model.IntermediateNum)
+                </li>
+                <li>
+                    <em>"@Html.DisplayFor(model => model.IntermediateTitle)"</em>
+                </li>
+                <li>
+                    <br />Final Speaker..........................................................................................................................@speakerList[1]
+                </li>
+            }
             <li>
                 <br />@Html.DisplayNameFor(model => model.ClosingHymnTitle)..........................................................................................................................@Html.DisplayFor(model => model.ClosingHymnNum)
             </li>
