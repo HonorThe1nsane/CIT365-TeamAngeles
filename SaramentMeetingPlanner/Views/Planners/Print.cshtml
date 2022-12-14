@@ -21,9 +21,6 @@
                 <br />@Html.DisplayNameFor(model => model.ConductingLeader)...........................................................................................................................@Html.DisplayFor(model => model.ConductingLeader)
             </li>
             <li>
-                <br />@Html.DisplayNameFor(model => model.NumberOfSpeakers)..........................................................................................................................@Html.DisplayFor(model => model.NumberOfSpeakers)
-            </li>
-            <li>
                 <br />@Html.DisplayNameFor(model => model.OpeningSongTitle)...........................................................................................................................@Html.DisplayFor(model => model.OpeningSongNum)
             </li>
             <li>
@@ -37,6 +34,9 @@
             </li>
             <li>
                 <em>"@Html.DisplayFor(model => model.SacramentHymnTitle)"</em>
+            </li>
+            <li>
+                <br />@Html.DisplayNameFor(model => model.NumberOfSpeakers)..........................................................................................................................@Html.DisplayFor(model => model.NumberOfSpeakers)
             </li>
             @if (Model.NumberOfSpeakers == 3)
             {
